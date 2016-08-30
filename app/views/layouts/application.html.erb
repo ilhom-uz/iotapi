@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <title>Iotapi</title>
@@ -7,6 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="container">
+
+  <!-- The justified navigation menu is meant for single line per list item.
+       Multiple lines will require custom code not provided by Bootstrap. -->
+  <div class="masthead">
+    <nav>
+      <ul class="nav nav-justified bg-inverse">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Downloads</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
 
 <%= yield %>
 

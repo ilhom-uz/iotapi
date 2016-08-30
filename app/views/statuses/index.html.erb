@@ -1,31 +1,58 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Statuses</h1>
+<div class="page-header"><h4>Home Monitoring</h4></div>
+<div class="row">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="well"><h3>80.02</h3><br><h5>Temperature</h5></div>
+    </div>
+    <div class="col-lg-3">
+      <div class="well"><h3>44%</h3><br><h5>Humidity</h5></div>
+    </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Style</th>
-      <th>Background</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <div class="col-lg-3">
+      <div class="well"><h3>30</h3><br><h4>Dust Level</h4>
+      </div>
+    </div>
 
-  <tbody>
-    <% @statuses.each do |status| %>
-      <tr>
-        <td><%= status.title %></td>
-        <td><%= status.style %></td>
-        <td><%= status.background %></td>
-        <td><%= link_to 'Show', status %></td>
-        <td><%= link_to 'Edit', edit_status_path(status) %></td>
-        <td><%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <div class="col-lg-3">
+      <div class="well"><h3>250</h3><br><h4>Gas Level</h4></div>
+    </div>
 
-<br>
+</div>
 
-<%= link_to 'New Status', new_status_path %>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<div class="row">
+
+  <div class="col-lg-6">
+    <h2>Temp Graph</h2>
+    <p class="text-danger">As of v9.1.2, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>
+    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+  </div>
+  <div class="col-lg-6">
+    <h2>Humidity Graph</h2>
+    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+  </div>
+
+</div>
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>Dust Graph</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+    </div>
+    <div class="col-lg-6">
+      <h2>Gas Graph</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+    </div>
+
+  </div>
+
