@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @temperature.title %>
+</p>
+
+<p>
+  <strong>Temp:</strong>
+  <%= @temperature.temp %>
+</p>
+
+<p>
+  <strong>Humidity:</strong>
+  <%= @temperature.humidity %>
+</p>
+
+<p>
+  <strong>Gas:</strong>
+  <%= @temperature.gas %>
+</p>
+
+<%= link_to 'Edit', edit_temperature_path(@temperature) %> |
+<%= link_to 'Back', temperatures_path %>
